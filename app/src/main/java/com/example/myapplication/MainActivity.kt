@@ -26,8 +26,8 @@ class MainActivity : AppCompatActivity() {
         val button : Button = this.findViewById<Button>(R.id.button_show_popup)
 
         button.setOnClickListener() {
-            var popup : PopupWindow = PopupWindow(view, 200, 200)
-            popup.showAtLocation(it,0,300, 300)
+            var popup : PopupWindow = PopupWindow(view, -1, 200)
+            popup.showAtLocation(it,0,300, 400)
         }
     }
 }
